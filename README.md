@@ -1,4 +1,4 @@
-# Time Complexity and Tree
+# Time Complexity and Tree 1
 ## Lecture plan
 * Time complexity
 * growth of functions
@@ -63,4 +63,58 @@
   - These notations are pronounced “Big Oh”, “Big Theta”, and “Big Omega”, respectively.
   - The big-O notation gives an upper bound on the growth rate of a function, which is our focus
 * <img width="559" alt="Screen Shot 2022-06-16 at 5 18 05 PM" src="https://user-images.githubusercontent.com/89602311/174186124-4b2a4fb8-0eb1-4d59-bd0a-a6ddb86d7dce.png">
+## Self Test
+* Get the big-) of the follows:
+  - ```
+    for (i = 0; i < n; i++)
+      for (j = 0; j<n; j++)
+         k++
+    ```
+  - O(n^2)
+  - ```
+    int x = 0;
+    for (int i = 0; i < n*n; i++)
+      x += i;
+    ```
+  - O(n^2)
+  - ```
+    int x = 0;
+    for (int i = 1; i < n; i++)
+      for (int j = i; j< 100; j++)
+         x += i + j;
+    ```
+  - O(n)
+  - ```
+    int x = 0;
+    for (int i = 1; i < n * n; i++)
+      for (int j = 1; j < i; j++)
+        x += i + j;
+    ```
+  - O(n^4)
+  - ```
+    int i = 0, j = 0;
+    for (; i < n; i++)
+      while (j < n && arr[i] < arr[j])
+        j++
+    ```
+  - O(n)
+## Time Complexity on Recursion
+* Recursively call the same function
+  - Solve the subproblems
+    - The size of the input will be reduced
+  - Merge the results from subproblem
+* Example: factorial
+  - <img width="539" alt="Screen Shot 2022-06-16 at 6 16 58 PM" src="https://user-images.githubusercontent.com/89602311/174193514-cbcd3eb7-8d40-46ab-b40e-46a54b68a75f.png">
+  - the time complexity of factorial(n) is: 
+  - <img width="314" alt="Screen Shot 2022-06-16 at 6 17 36 PM" src="https://user-images.githubusercontent.com/89602311/174193568-28fb774c-a8e7-41d9-8f94-57eab2fb36a8.png">
+  - T(n) is an arithmetic sequence with the common difference 4 of successive members and T(0) equals 2
+  - <img width="312" alt="Screen Shot 2022-06-16 at 6 17 59 PM" src="https://user-images.githubusercontent.com/89602311/174193594-b4c504bf-1578-4a3b-a07d-b7df6b28622a.png">
+  - The time complexity of factorial is O(n)
+* Example: fibonacci number
+  - <img width="476" alt="Screen Shot 2022-06-16 at 6 19 11 PM" src="https://user-images.githubusercontent.com/89602311/174193700-43093a5f-1588-4a61-b700-2b3798ba86a8.png">
+  - <img width="536" alt="Screen Shot 2022-06-16 at 6 19 30 PM" src="https://user-images.githubusercontent.com/89602311/174193720-7381318e-41c2-4c3e-bdb3-1f516aa1a586.png">
+  - <img width="556" alt="Screen Shot 2022-06-16 at 6 19 45 PM" src="https://user-images.githubusercontent.com/89602311/174193750-8523a334-27f0-4589-a261-cb40f9c09816.png">
+
+
+
 
