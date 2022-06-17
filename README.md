@@ -114,6 +114,21 @@
   - <img width="476" alt="Screen Shot 2022-06-16 at 6 19 11 PM" src="https://user-images.githubusercontent.com/89602311/174193700-43093a5f-1588-4a61-b700-2b3798ba86a8.png">
   - <img width="536" alt="Screen Shot 2022-06-16 at 6 19 30 PM" src="https://user-images.githubusercontent.com/89602311/174193720-7381318e-41c2-4c3e-bdb3-1f516aa1a586.png">
   - <img width="556" alt="Screen Shot 2022-06-16 at 6 19 45 PM" src="https://user-images.githubusercontent.com/89602311/174193750-8523a334-27f0-4589-a261-cb40f9c09816.png">
+## Tree Terms
+* Binary Tree: a tree in which a node has at most two children
+* Full binary tree: a binary tree of heigh h every node other than the leaf nodes has two child nodes
+* Complete binary tree: a binary tree of height h that is full to level h-1 and has the level h filled in from left to right
+* Binary Search tree: a binary tree with a key ordering property that supports search of a key
+* Balanced binary tree: in next CS class
+## Binary Tree
+* Definition
+  - Recursive definiton:
+    - Basic step: root (parent node)
+    - Recursive step: two optional subtrees (child nodes: root.left, root.right)
+* Implementation
+  - Linked implementation is natural
+  - Other implementation is also possible
+  - <img width="595" alt="Screen Shot 2022-06-16 at 6 40 55 PM" src="https://user-images.githubusercontent.com/89602311/174195510-45b74aae-1e9c-4843-b56b-957d910967bb.png">
 
 
 
